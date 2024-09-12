@@ -1,0 +1,21 @@
+package kh.pizzastore.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import kh.pizzastore.entity.PizzaUser;
+import kh.pizzastore.repository.UserRepository;
+
+@Service
+public class UserService {
+
+    @Autowired
+    private UserRepository userRepository;
+
+
+
+    public PizzaUser registerUser(PizzaUser user) {
+
+    	return userRepository.save(user);
+    }
+}

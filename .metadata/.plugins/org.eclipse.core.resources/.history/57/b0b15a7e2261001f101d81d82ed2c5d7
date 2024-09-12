@@ -1,0 +1,5 @@
+package kh.pizzastore.repository;
+
+public class ProductRepository {
+
+}

@@ -1,0 +1,72 @@
+package kh.pizzastore.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.PrePersist;
+import jakarta.persistence.Transient;
+import jakarta.persistence.PostLoad;
+import lombok.*;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+@Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+public class PizzaProduct {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+
+    private String image;
+
+    private String description;
+
+    private int priceM;
+
+    private int priceL;
+
+    private String ingredients;  // Store ingredients as a comma-separated string
+
+    private String details;
+
+    // This method converts the List<String> to a comma-separated String before saving to the database
+    @PrePersist
+    private void convertIngredientsToString() {
+        if (ingredientsList != null && !ingredientsList.isEmpty()) {
+            this.ingredients = String.join(",", ingredientsList);
+        }
+    }
+
+    // This method converts the comma-separated String back to a List<String> after loading from the database
+    @PostLoad
+    private void convertStringToIngredients() {
+        if (this.ingredients != null && !this.ingredients.isEmpty()) {
+            this.ingredientsList = Arrays.stream(this.ingredients.split(","))
+                                         .map(String::trim)
+                                         .collect(Collectors.toList());
+        }
+    }
+
+    @Transient
+    private List<String> ingredientsList;
+
+    // Getters and Setters for ingredientsList
+
+    public List<String> getIngredientsList() {
+        return ingredientsList;
+    }
+
+    public void setIngredientsList(List<String> ingredientsList) {
+        this.ingredientsList = ingredientsList;
+    }
+}

@@ -1,0 +1,5 @@
+package kh.pizzastore.entity;
+
+public class PizzaUser {
+
+}

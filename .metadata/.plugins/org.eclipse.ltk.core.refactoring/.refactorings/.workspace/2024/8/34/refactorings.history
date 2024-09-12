@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;pizza-backend/src/main/resources/mybatis-config.xml&apos;" deleteContents="false" description="Delete resource &apos;pizza-backend/src/main/resources/mybatis-config.xml&apos;" element1="/pizza-backend/src/main/resources/mybatis-config.xml" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1724397739648"/>
+</session>
