@@ -1,0 +1,50 @@
+.benefits-section {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: #f3f3f3;
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  position: relative;
+}
+
+.benefits-section:before {
+  content: "특별한 할인혜택";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffec00;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.benefit-item {
+  flex: 1;
+  max-width: 180px;
+  margin: 0 10px;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-item h3 {
+  font-size: 1.5em;
+  color: #e31837;
+  margin-bottom: 10px;
+}
+
+.benefit-item p {
+  font-size: 1em;
+  color: #333;
+}

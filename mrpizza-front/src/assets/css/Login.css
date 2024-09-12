@@ -1,0 +1,121 @@
+.login-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .login-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-header h2 {
+    color: #e31837;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .options label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .options a {
+    color: #e31837;
+    text-decoration: none;
+  }
+  
+  .options a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e31837;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #d01731;
+  }
+  
+  .login-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .register-btn,
+  .naver-btn,
+  .payco-btn {
+    width: 32%;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .register-btn {
+    background-color: #0071c2;
+    color: #fff;
+  }
+  
+  .register-btn:hover {
+    background-color: #005a9e;
+  }
+  
+  .naver-btn {
+    background-color: #03c75a;
+    color: #fff;
+  }
+  
+  .naver-btn:hover {
+    background-color: #02a04a;
+  }
+  
+  .payco-btn {
+    background-color: #ff003c;
+    color: #fff;
+  }
+  
+  .payco-btn:hover {
+    background-color: #d90032;
+  }
+  

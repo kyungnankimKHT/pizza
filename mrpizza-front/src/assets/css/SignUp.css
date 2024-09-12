@@ -1,0 +1,172 @@
+.signup-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  .signup-container h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #e31837;
+  }
+  
+  .signup-section {
+    margin-bottom: 20px;
+  }
+  
+  .signup-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .terms {
+    margin-bottom: 20px;
+  }
+
+  .terms label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+  .term-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .term-btn {
+    padding: 5px 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+
+  .term-btn:hover {
+    background-color: #444;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group label {
+    flex: 0 0 200px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .input-group input, .input-group select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .phone-input, .email-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone-input select, .phone-input input {
+    width: 50%;
+    margin-right: 10px;
+  }
+  
+  .email-input input[type="text"], .email-input select {
+    width: calc(33% - 10px);
+    margin-right: 10px;
+  }
+  
+  .email-input span {
+    margin-right: 10px;
+    width: auto;
+  }
+
+  .find-address {
+    width: 100px;
+    padding: 10px;
+    background-color: #555;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .find-address:hover {
+    background-color: #444;
+  }
+  
+  .address-info {
+    color: #e31837;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+  
+  .marketing-consent {
+    margin-top: 15px;
+  }
+  
+  .marketing-consent p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
+  .marketing-consent table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .marketing-consent th, .marketing-consent td {
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .signup-actions {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signup-btn {
+    background-color: #e31837;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .signup-btn:hover {
+    background-color: #d4172f;
+  }
+  
+  .cancel-btn {
+    background-color: #777777;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #666666;
+  }

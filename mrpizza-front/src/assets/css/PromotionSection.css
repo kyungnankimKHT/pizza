@@ -1,0 +1,28 @@
+.promotion-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.promotion-item {
+  flex: 1;
+  margin: 0 15px;
+  text-align: center;
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.promotion-item h2 {
+  font-size: 1.8em;
+  color: #e31837;
+  margin-bottom: 10px;
+}
+
+.promotion-item p {
+  font-size: 1.1em;
+  color: #666;
+}
